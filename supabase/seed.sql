@@ -1,0 +1,1 @@
+INSERT INTO auth.users (id, email) VALUES (gen_random_uuid(), 'test@test.com');
