@@ -23,7 +23,7 @@ jobs:
       - name: Setup Supabase CLI
         uses: supabase/setup-cli@v1
         with:
-          version: '2.20.3'
+          version: latest
 
       - name: Link to Supabase Project
         run: supabase link --project-ref $PROJECT_ID
