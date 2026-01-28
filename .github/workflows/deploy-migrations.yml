@@ -6,8 +6,8 @@ on:
     branches:
       - main
     paths:
-      - 'packages/supabase/migrations/**'
-      - '.github/workflows/deploy-migrations.yml'
+      - "packages/supabase/migrations/**"
+      - ".github/workflows/deploy-migrations.yml"
 
 jobs:
   deploy-migrations:
@@ -27,6 +27,8 @@ jobs:
 
       - name: Link to Supabase Project
         run: supabase link --project-ref $PROJECT_ID
+        working-directory: packages/supabase
 
       - name: Deploy Migrations
         run: supabase db push
+        working-directory: packages/supabase
