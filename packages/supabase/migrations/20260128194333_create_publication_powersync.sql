@@ -1,0 +1,1 @@
+create publication powersync for table public.profiles, public.workouts;
